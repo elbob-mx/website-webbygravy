@@ -12,7 +12,6 @@ module.exports = {
       colors: {
         offBlack: "#181818",
         offWhite: "#F2F2F2",
-        darkAqua: "#001212",
       },
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
