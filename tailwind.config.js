@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        archivo: "Archivo, sans-serif",
         kosugi: "Kosugi, sans-serif",
         lexend: "Lexend, sans-serif",
         lexendExa: "Lexend Exa,  sans-serif",
-        archivo: "Archivo, sans-serif",
       },
       colors: {
         offBlack: "#181818",
