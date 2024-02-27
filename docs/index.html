@@ -17,89 +17,104 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="overflow-x-hidden bg-offBlack">
+<body class="overflow-x-hidden bg-offBlack px-0">
 
-    <div class="h-screen">
-        <div>
-            <img src="../assets/img/logo/wg-logo.svg" alt="webbyGravy logo" class="py-10 laptop:pl-2 w-72 laptop:w-96">
-            <h1 class="text-5xl uppercase laptop:text-9xl font-archivo text-offWhite">tú idea<br>
-                <span class="text-emerald-200">nuestro gravy</span><br>
-                crean tú:
-            </h1>
-        </div>
+    <div class="h-screen flex flex-col px-0 laptop:px-0">
+        <a href="index.html" class="w-3/4 laptop:w-1/4">
+            <img src="../assets/img/logo/wg-logo.svg" alt="webbyGravy logo" class="py-12 laptop:py-16 px-0"></a>
+
+        <h1 class="text-5xl uppercase laptop:text-9xl font-archivo text-offWhite">tienes
+            una idea<br>
+            <span class="text-webbyGreen">hagámos</span><br>
+            que destaque
+        </h1>
 
         <div x-data="{}" x-init="$nextTick(() => {
                                 let ul = $refs.servicios;
                                 ul.insertAdjacentHTML('afterend', ul.outerHTML);
                                 ul.nextSibling.setAttribute('aria-hidden', 'true');
                             })"
-            class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+            class="inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
             <ul x-ref="servicios"
                 class="flex items-center py-1 max-h-fit justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">gráfico</p>
+                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">gráfico</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">web</p>
+                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">web</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">merch</p>
+                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">merch</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">branding</p>
+                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">branding</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">audio</p>
+                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">audio</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">ilustración</p>
+                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">ilustración</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">fotografía</p>
+                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">fotografía</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">video</p>
+                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">video</p>
                 </li>
             </ul>
         </div>
         <div>
-            <button class="flex flex-row duration-500"><a href="#down" class="duration-500"><span
-                        class="justify-start duration-500 text-7xl material-symbols-sharp text-offWhite hover:text-violet-400 hover:translate-y-2 laptop:text-9xl">
+            <button class="flex flex-row"><a href="#down" class="duration-500"><span
+                        class="justify-start duration-500 text-7xl material-symbols-sharp text-offWhite hover:text-orange-500 hover:translate-y-2 laptop:text-9xl">
                         arrow_downward
                     </span></a></button>
         </div>
     </div>
 
-    <section id="down" class="w-full h-screen px-12 pt-24 duration-500 bg-emerald-200 laptop:px-24">
-        <h2 class="pb-6 text-6xl font-semibold text-offBlack font-archivo">Lorem, ipsum.</h2>
-        <p class="font-archivo text-offBlack border-[1px] border-offBlack p-12">Lorem ipsum dolor sit amet,
-            consectetur
-            adipisicing elit. Optio ab
-            libero possimus maxime labore? Aliquam ex earum vel maxime ab, ut natus atque ducimus blanditiis sed
-            laboriosam pariatur? Quibusdam ullam consequuntur vitae excepturi voluptas natus, exercitationem dignissimos
-            in iste optio quam sit, modi minima suscipit eligendi. Aspernatur libero reiciendis quia. Harum praesentium
-            suscipit doloribus ab pariatur repellat at eaque rem, voluptatum beatae, perferendis quo ipsa nemo
-            aspernatur eum non error architecto exercitationem obcaecati minus possimus debitis, officiis veritatis
-            incidunt. Illo, corporis? Totam placeat aut tenetur temporibus. Nam magnam hic reprehenderit accusamus
-            aliquam tempore aperiam, neque modi est in eos praesentium eum obcaecati mollitia consequatur maiores
-            ratione sequi, possimus vel unde fuga, earum vitae. Iure provident suscipit, officiis vel aut, quidem
-            corrupti laboriosam natus nostru ipsa, incidunt quia.</p>
+    <section id="down"
+        class="flex flex-wrap laptop:flex-row flex-row bg-webbyGreen font-kosugi text-base laptop:text-lg hd:text-xl text-offBlack laptop:p-24 p-8">
 
-        <div class="flex flex-row">
-            <p class="font-archivo text-offBlack border-[1px] border-offBlack p-12 my-[-1px] mt-[-1px">Lorem ipsum
-                dolor, sit
-                amet
-                consectetur
-                adipisicing elit. Nobis porro maiores fuga libero culpa cum ipsum
-                non, at in quod hic. Deserunt officiis nisi quis autem beatae.</p>
-            <p class="font-archivo text-offBlack border-[1px] border-offBlack p-12 mx-[-1px] bg-offBlack mt-[-1px]">
-                Lorem ipsum
-                dolor sit amet
-                consectetur, adipisicing elit. Tenetur qui eaque eveniet saepe!</p>
+        <div class="laptop:text-7xl text-5xl w-full">
+            <h1 class="pb-4 laptop:pb-6">Lorem, ipsum.</h1>
+        </div>
+
+        <div class="w-full border-[1px] border-offBlack laptop:p-12 p-8">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit.
+            Hic, consectetur
+            dolorum?
+            Odit, consectetur esse quisquam repellat, velit officiis repellendus excepturi, sapiente similique sint
+            molestias. Ipsam dolorum similique atque. Et culpa, amet quis fugit fuga id doloremque rerum ipsa nisi,
+            tenetur enim ad error.</div>
+
+        <div class="w-3/4 border-[1px] border-offBlack laptop:p-12 p-8 mt-[-1px]">Lorem ipsum dolor, sit amet
+            consectetur
+            adipisicing elit.
+            Nisi, debitis tempora consectetur, ex eaque error libero natus quisquam laboriosam dicta, saepe reiciendis
+            asperiores dolor!</div>
+
+        <div class="w-1/4 bg-offBlack border-[1px] border-offBlack laptop:p-12 p-8"></div>
+
+        <div class="w-1/2 border-[1px] border-offBlack bg-offBlack laptop:p-12 p-8 mt-[-1px] font-lexendExa">
+        </div>
+        <div class="w-1/2 border-[1px] border-offBlack laptop:p-12 p-8 mt-[-1px] font-lexendExa">
+            <div class="flex flex-col">
+                <a href="#" class="pt-6 align-middle"><i class="fa-solid fa-desktop text-offBlack text-3xl"></i>
+                    HTML</a>
+                <a href="#" class="pt-6 align-middle"><i class="fa-solid fa-desktop text-offBlack text-3xl"></i>
+                    CSS</a>
+                <a href="#" class="pt-6 align-middle"><i class="fa-solid fa-desktop text-offBlack text-3xl"></i>
+                    JS</a>
+                <a href="#" class="pt-6 align-middle"><i class="fa-solid fa-desktop text-offBlack text-3xl"></i>
+                    Tailwind</a>
+                <a href="#" class="pt-6 align-middle"><i class="fa-solid fa-desktop text-offBlack text-3xl"></i>
+                    AlpineJS</a>
+            </div>
         </div>
     </section>
 
-    <img src="../assets/img/bg/bg-glitch-main.png" alt="" class="absolute w-full h-screen bg-offWhite">
+    <div class="bg-offBlack h-[200px] w-full"></div>
+
+    <img src="../assets/img/bg/bg-glitch-main.png" alt="" class="absolute w-full h-screen bg-webbyGreen">
 </body>
 
 </html>

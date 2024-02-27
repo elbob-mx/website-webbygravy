@@ -26,6 +26,7 @@ module.exports = {
       colors: {
         offBlack: "#181818",
         offWhite: "#F2F2F2",
+        webbyGreen: "#A7F3D0",
       },
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
