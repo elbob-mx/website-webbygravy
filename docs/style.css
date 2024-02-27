@@ -588,6 +588,10 @@ video {
   max-height: fit-content;
 }
 
+.min-h-4 {
+  min-height: 1rem;
+}
+
 .w-96 {
   width: 24rem;
 }
