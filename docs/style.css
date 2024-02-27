@@ -564,6 +564,10 @@ video {
   display: inline-flex;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -706,6 +710,10 @@ video {
   font-family: Kosugi, sans-serif;
 }
 
+.font-lexend {
+  font-family: Lexend, sans-serif;
+}
+
 .font-lexendExa {
   font-family: Lexend Exa,  sans-serif;
 }
@@ -776,10 +784,6 @@ video {
 @media (min-width: 976px) {
   .laptop\:w-1\/4 {
     width: 25%;
-  }
-
-  .laptop\:w-1\/2 {
-    width: 50%;
   }
 
   .laptop\:flex-row {
