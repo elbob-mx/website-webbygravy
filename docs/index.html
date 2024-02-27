@@ -17,16 +17,17 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="px-0 overflow-x-hidden bg-offBlack">
+<body class="overflow-x-hidden bg-offBlack">
 
     <div class="flex flex-col h-screen px-0 laptop:px-0">
         <a href="index.html" class="w-3/4 laptop:w-1/4">
-            <img src="../assets/img/logo/wg-logo.svg" alt="webbyGravy logo" class="px-0 py-12 laptop:py-16"></a>
+            <img src="/assets/img/logo/wg-logo.svg" alt="webbyGravy logo"
+                class="px-6 py-12 laptop:px-12 laptop:py-16"></a>
 
         <h1 class="text-5xl uppercase laptop:text-9xl font-archivo text-offWhite">tienes
-            una idea<br>
+            una idea,<br>
             <span class="text-webbyGreen">hagámos</span><br>
-            que destaque
+            que destaque.
         </h1>
 
         <div x-data="{}" x-init="$nextTick(() => {
@@ -72,13 +73,14 @@
     </div>
 
     <section id="down"
-        class="flex flex-row flex-wrap p-8 text-base laptop:flex-row bg-webbyGreen font-kosugi laptop:text-lg hd:text-xl text-offBlack laptop:p-24">
+        class="flex flex-row flex-wrap p-8 text-base laptop:flex-row bg-webbyGreen font-kosugi laptop:text-lg hd:text-base text-offBlack laptop:p-24">
 
-        <div class="w-full text-5xl laptop:text-7xl">
+        <div class="w-full text-5xl font-archivo laptop:text-7xl">
             <h1 class="pb-4 laptop:pb-6">Lorem, ipsum.</h1>
         </div>
 
-        <div class="w-full border-[1px] border-offBlack laptop:p-12 p-8">Lorem ipsum dolor sit amet consectetur,
+        <div class="w-full border-[1px] border-offBlack laptop:p-10 p-8 laptop:text-xl">Lorem ipsum dolor sit amet
+            consectetur,
             adipisicing elit.
             Hic, consectetur
             dolorum?
@@ -86,15 +88,15 @@
             molestias. Ipsam dolorum similique atque. Et culpa, amet quis fugit fuga id doloremque rerum ipsa nisi,
             tenetur enim ad error.</div>
 
-        <div class="w-3/4 border-[1px] border-offBlack laptop:p-12 p-8 mt-[-1px]">Lorem ipsum dolor, sit amet
+        <div class="w-3/4 border-[1px] border-offBlack laptop:p-10 p-8 mt-[-0.5px]">Lorem ipsum dolor, sit amet
             consectetur
             adipisicing elit.
             Nisi, debitis tempora consectetur, ex eaque error libero natus quisquam laboriosam dicta, saepe reiciendis
             asperiores dolor!</div>
 
-        <div class="w-1/4 bg-offBlack border-[1px] border-offBlack laptop:p-12 p-8"></div>
+        <div class="w-1/4 bg-offBlack border-[1px] border-offBlack laptop:p-10 p-8"></div>
 
-        <div class="w-1/2 border-[1px] border-offBlack bg-offBlack laptop:p-12 p-8 mt-[-1px] font-lexendExa">
+        <div class="w-1/2 border-[1px] border-offBlack bg-offBlack laptop:p-10 p-8 mt-[-1px] font-lexendExa">
         </div>
         <div class="w-1/2 border-[1px] border-offBlack laptop:p-12 p-8 mt-[-1px] font-lexendExa">
             <div class="flex flex-col">
@@ -112,7 +114,7 @@
         </div>
     </section>
 
-    <div class="bg-offBlack h-[200px] w-full"></div>
+    <div class="w-full bg-offBlack"></div>
 
     <img src="../assets/img/bg/bg-glitch-main.png" alt="" class="absolute w-full h-screen bg-webbyGreen">
 </body>
