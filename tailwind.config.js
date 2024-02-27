@@ -2,6 +2,20 @@
 module.exports = {
   content: ["./docs/*.html"],
   theme: {
+    screens: {
+      small: "0px",
+      mobile: "375px",
+      mobileHorSmall: "567px",
+      mobileHor: "640px",
+      tablet: "767px",
+      bigHor: "811px",
+      bigPhoneHor: "844px",
+      vertIpadMini: "820px",
+      laptop: "976px",
+      ipad: "1023px",
+      hd: "1365px",
+      fhd: "1440px",
+    },
     extend: {
       fontFamily: {
         archivo: "Archivo, sans-serif",

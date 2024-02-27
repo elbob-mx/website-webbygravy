@@ -1,5 +1,5 @@
-<!DOCTYPE html class="scroll-smooth">
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es-MX" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -19,12 +19,13 @@
 
 <body class="overflow-x-hidden bg-offBlack">
 
-    <div class="h-full">
+    <div class="h-screen">
         <div>
-            <img src="../assets/img/logo/wg-logo.svg" alt="webbyGravy logo" class="py-10 pl-2 w-96">
-            <h1 class="uppercase text-9xl font-archivo text-offWhite">idea <br>
-                diseña <br>
-                desarrolla</h1>
+            <img src="../assets/img/logo/wg-logo.svg" alt="webbyGravy logo" class="py-10 laptop:pl-2 w-72 laptop:w-96">
+            <h1 class="text-5xl uppercase laptop:text-9xl font-archivo text-offWhite">tú idea<br>
+                <span class="text-emerald-200">nuestro gravy</span><br>
+                crea tú:
+            </h1>
         </div>
 
         <div x-data="{}" x-init="$nextTick(() => {
@@ -36,41 +37,41 @@
             <ul x-ref="servicios"
                 class="flex items-center py-1 max-h-fit justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                 <li>
-                    <p class="text-5xl text-emerald-200 font-archivo">diseño</p>
+                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">diseño</p>
                 </li>
                 <li>
-                    <p class="text-5xl text-emerald-200 font-archivo">web</p>
+                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">web</p>
                 </li>
                 <li>
-                    <p class="text-5xl text-emerald-200 font-archivo">promocionales</p>
+                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">merch</p>
                 </li>
                 <li>
-                    <p class="text-5xl text-emerald-200 font-archivo">branding</p>
+                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">branding</p>
                 </li>
                 <li>
-                    <p class="text-5xl text-emerald-200 font-archivo">audio</p>
+                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">audio</p>
                 </li>
                 <li>
-                    <p class="text-5xl text-emerald-200 font-archivo">ilustración</p>
+                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">ilustración</p>
                 </li>
                 <li>
-                    <p class="text-5xl text-emerald-200 font-archivo">fotografía</p>
+                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">fotografía</p>
                 </li>
                 <li>
-                    <p class="text-5xl text-emerald-200 font-archivo">video</p>
+                    <p class="text-2xl laptop:text-5xl text-emerald-200 font-archivo">video</p>
                 </li>
             </ul>
         </div>
         <div>
             <button class="flex flex-row duration-500"><a href="#down" class="duration-500"><span
-                        class="justify-start duration-500 material-symbols-sharp text-offWhite hover:text-emerald-200 hover:translate-y-2 text-9xl">
+                        class="justify-start duration-500 text-7xl material-symbols-sharp text-offWhite hover:text-violet-400 hover:translate-y-2 laptop:text-9xl">
                         arrow_downward
                     </span></a></button>
         </div>
     </div>
 
-    <section id="down" class="w-full h-screen px-24 pt-24 duration-500 bg-offWhite">
-        <h2 class="pb-6 text-6xl font-semibold text-offBlack font-archivo">Lorem, ipsum dolor.</h2>
+    <section id="down" class="w-full h-screen px-12 pt-24 duration-500 bg-emerald-200 laptop:px-24">
+        <h2 class="pb-6 text-6xl font-semibold text-offBlack font-archivo">Lorem, ipsum.</h2>
         <p class="font-archivo text-offBlack border-[1px] border-offBlack p-12">Lorem ipsum dolor sit amet,
             consectetur
             adipisicing elit. Optio ab
@@ -98,7 +99,7 @@
         </div>
     </section>
 
-    <img src="../assets/img/bg/bg-glitch-main.png" alt="" class="absolute w-full bg-offWhite">
+    <img src="../assets/img/bg/bg-glitch-main.png" alt="" class="absolute w-full h-screen bg-offWhite">
 </body>
 
 </html>
