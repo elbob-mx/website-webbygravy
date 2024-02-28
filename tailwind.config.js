@@ -18,8 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        archivo: "Archivo, sans-serif",
-        kosugi: "Kosugi, sans-serif",
+        archivo: "archivo, sans-serif",
         lexend: "Lexend, sans-serif",
         lexendExa: "Lexend Exa,  sans-serif",
       },
