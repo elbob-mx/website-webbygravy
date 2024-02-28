@@ -13,8 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kosugi&family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./docs/style.css">
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -22,16 +25,19 @@
 
 <body class="overflow-x-hidden bg-offBlack">
 
+    <!-- logo -->
     <div class="flex flex-col h-screen px-0 laptop:px-0">
-        <a href="index.html" class="w-3/4 laptop:w-1/4">
-            <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="px-6 py-12 laptop:px-12 laptop:py-16"></a>
+        <a href="index.html" class="w-3/4 laptop:w-1/2">
+            <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="px-6 py-12 laptop:px-0 laptop:py-16"></a>
 
+        <!-- web description -->
         <h1 class="text-5xl uppercase laptop:text-9xl font-archivo text-offWhite">tienes
             una idea,<br>
             <span class="text-webbyGreen">hagámos</span><br>
             que destaque.
         </h1>
 
+        <!-- work carousel thing -->
         <div x-data="{}" x-init="$nextTick(() => {
                                 let ul = $refs.servicios;
                                 ul.insertAdjacentHTML('afterend', ul.outerHTML);
@@ -68,7 +74,7 @@
         </div>
         <div>
             <button class="flex flex-row"><a href="#down" class="duration-500"><span
-                        class="justify-start duration-500 text-7xl material-symbols-sharp text-offWhite hover:text-orange-500 hover:translate-y-2 laptop:text-9xl">
+                        class="justify-start duration-500 text-7xl material-symbols-sharp text-offWhite hover:text-webbyOrange hover:translate-y-2 laptop:text-9xl">
                         arrow_downward
                     </span></a></button>
         </div>
@@ -78,16 +84,20 @@
         class="flex flex-row flex-wrap p-8 text-base laptop:flex-row bg-webbyGreen font-archivo laptop:text-lg hd:text-base text-offBlack laptop:p-24">
 
         <div class="w-full text-5xl font-lexend laptop:text-7xl">
-            <h1 class="pt-4 pb-8 laptop:pt-0 laptop:pb-6">¡Hola! 👋 somos webbyGravy.</h1>
+            <h1 class="pt-4 pb-8 laptop:pt-0 laptop:pb-6">¡Hola! <span
+                    class="text-3xl laptop:text-6xl material-icons text-webbyOrange" aria-label="waving_hand">
+                    waving_hand
+                </span> somos <span class="text-webbyOrange">webbyGravy</span>.</h1>
         </div>
 
-        <div class="w-full border-[1px] border-offBlack laptop:p-10 p-8 text-xl laptop:text-4xl leading-relaxed">
+        <div
+            class="w-full border-[1px] rounded-t-md border-offBlack laptop:p-10 p-8 text-lg laptop:text-xl leading-relaxed mb-[-1px]">
             Trabajamos en
             múltiples
             proyectos, ya sea para grandes empresas, innovadoras pymes o startups con objetivos ingeniosos, cuidando
             siempre sus proyectos como el más importante.</div>
 
-        <div class="w-3/4 border-[1px] border-offBlack laptop:p-10 p-8 mt-[-0.5px] laptop:text-xl leading-relaxed">
+        <div class="w-3/4 border-[1px] border-offBlack laptop:p-10 p-8 text-lg laptop:text-xl leading-relaxed">
             Diseño gráfico,
             desarrollo web,
             ilustración, identidad y aplicación de tu marca, creación de audio y video, son algunas de nuestras cartas
@@ -96,7 +106,7 @@
         <div class="w-1/4 bg-offBlack border-[1px] border-offBlack laptop:p-10 p-8"></div>
 
         <div
-            class="w-1/2 border-[1px] border-offBlack bg-offBlack laptop:p-10 p-8 mt-[-1px] font-lexendExa laptop:text-5xl text-webbyGreen">
+            class="w-1/2 border-[1px] border-offBlack bg-offBlack laptop:p-10 p-8 mt-[-1px] font-lexendExa laptop:text-4xl text-webbyGreen">
             Comúnicate con nosotros; si hay una idea, hay una solución.
         </div>
         <div class="w-1/2 border-[1px] border-offBlack laptop:p-12 p-8 mt-[-1px] font-lexendExa">
