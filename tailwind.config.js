@@ -27,7 +27,7 @@ module.exports = {
         offBlack: "#181818",
         offWhite: "#F2F2F2",
         webbyGreen: "#A7F3D0",
-        webbyOrange: "#FF4D00",
+        webbyOrange: "#ff5f1a",
         magenta: "#FF00FF",
       },
       animation: {
