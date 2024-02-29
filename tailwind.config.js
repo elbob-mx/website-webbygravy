@@ -18,9 +18,12 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        archivo: "archivo, sans-serif",
+        archivo: "Archivo, sans-serif",
+        archivoNarrow: "Archivo Narrow, sans-serif",
         lexend: "Lexend, sans-serif",
-        lexendExa: "Lexend Exa,  sans-serif",
+        lexendExa: "Lexend Exa, sans-serif",
+        source: "Source Code Pro, monospace",
+        inconsolata: "Inconsolata, monospace",
         kosugi: "Kosugi, sans-serif",
       },
       colors: {
