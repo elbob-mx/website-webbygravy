@@ -23,10 +23,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="overflow-x-hidden bg-offBlack">
+<body class="overflow-x-hidden">
 
     <!-- logo -->
-    <div class="flex flex-col h-screen px-0 laptop:px-0">
+    <section class="flex flex-col h-screen px-0 laptop:px-0 bg-offBlack">
         <a href="index.html" class="w-3/4 laptop:w-1/2">
             <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="px-6 py-12 laptop:px-0 laptop:py-12"></a>
 
@@ -78,32 +78,38 @@
                         arrow_downward
                     </span></a></button>
         </div>
-    </div>
+    </section>
 
     <!-- contenido -->
     <section id="down"
-        class="flex flex-row flex-wrap px-6 text-base tablet:px-8 bg-webbyGreen font-archivo laptop:text-lg hd:text-base text-offBlack laptop:px-24">
+        class="flex flex-row flex-wrap h-screen px-0 text-base bg-webbyGreen font-archivo laptop:text-lg hd:text-base text-offBlack">
 
-        <div class="flex flex-row w-full pt-10 pb-8 text-4xl font-lexend laptop:text-7xl">
-            <h1 class="items-center">¡Hola!
-                <span class="p-3 text-4xl rounded-full laptop:text-5xl material-icons text-magenta bg-offBlack"
-                    aria-label="waving_hand">
-                    waving_hand</span>
-                somos <span class="text-magenta ">webbyGravy</span>
+        <div class="w-full px-4 py-10 text-5xl font-medium text-center laptop:text-left font-archivo laptop:text-5xl">
+            <h1>Hola! <i class="text-violet-700 fa-solid fa-handshake-angle"></i> somos
+                <span class="font-extrabold">webbyGravy</span>
             </h1>
         </div>
 
         <!-- 1° main -->
-        <div class="w-4/12 h-auto p-3 bg-offBlack">sigan caminando, nada que ver aquí...</div>
-        <div
-            class="w-8/12 p-6 text-lg mb-[-1px] tracking-wider border rounded-t-lg tablet:p-8 border-offBlack laptop:p-10 laptop:text-3xl">
+        <!-- sticky title -->
+        <div class="sticky top-0 w-full px-4 py-1 text-4xl laptop:text-5xl bg-offBlack text-offWhite font-archivo">
+            nosotros
+        </div>
+        <!-- sticky title -->
+        <div class="w-2/12 h-auto p-3 bg-offBlack"></div>
+        <!-- sticky title -->
+        <div class="w-10/12 p-6 text-xl tablet:p-6 laptop:p-8 laptop:text-5xl">
             Trabajamos en múltiples proyectos, ya sea para grandes empresas, innovadoras pymes o startups con objetivos
-            ingeniosos, <span class="font-bold text-offWhite bg-offBlack">cuidando siempre sus proyectos como el más
+            ingeniosos, <span class="font-bold text-violet-700">cuidando siempre sus proyectos como el más
                 importante.</span></div>
 
         <!-- 2° main -->
-        <div
-            class="w-3/4 p-6 text-lg leading-relaxed tracking-wider border tablet:p-8 border-offBlack laptop:p-10 laptop:text-xl">
+        <!-- sticky title -->
+        <div class="sticky top-0 w-full px-4 py-1 text-4xl laptop:text-5xl bg-offBlack text-offWhite font-archivo">
+            lo que hacemos
+        </div>
+        <!-- sticky title -->
+        <div class="w-8/12 p-6 text-xl tracking-wider tablet:p-6 laptop:p-4 laptop:text-3xl">
             <span class="font-bold">Diseño gráfico,
                 desarrollo web,
                 ilustración, identidad y aplicación de tu marca, creación de audio y video</span>, son algunas de
@@ -111,49 +117,49 @@
             de presentación.
         </div>
 
-        <div class="w-1/4 border bg-offBlack border-offBlack"></div>
+        <div class="w-4/12 border bg-offBlack border-offBlack"></div>
 
         <!-- comunicate -->
         <div
-            class="w-1/2 p-6 text-lg font-light border rounded-bl-lg laptop:w-3/4 text-wrap border-offBlack bg-offBlack laptop:p-10 tablet:p-8 font-lexend laptop:text-5xl tablet:text-4xl text-offWhite">
+            class="w-full p-6 text-lg font-light laptop:w-3/4 bg-offBlack laptop:pl-4 tablet:p-6 font-archivo laptop:text-4xl tablet:text-4xl text-offWhite">
             <a href="#"><span class="font-bold leading-relaxed duration-200 text-magenta hover:text-offWhite">Comunícate
                     con
                     nosotros</span></a>,
             si hay una
-            idea,<span class="font-bold text-webbyGreen">
+            idea,<span class="font-bold text-magenta">
                 hay
                 una solución</span>.
 
-            <ul class="flex-row justify-end hidden gap-6 pt-4 laptop:flex laptop:gap-20">
+            <ul class="flex-row justify-start hidden gap-6 pt-4 laptop:flex laptop:gap-16">
                 <a href="mailto:webbygravy.mx@gmail.com">
                     <li class="duration-500 text-offWhite hover:text-magenta hover:translate-x-1"><i
-                            class="text-3xl fa-solid fa-envelope "></i>
+                            class="text-4xl fa-solid fa-envelope "></i>
                     </li>
                 </a>
 
                 <a href="https://github.com/elbob-mx">
                     <li class="duration-500 hover:translate-x-1 text-offWhite hover:text-magenta "><i
-                            class="text-3xl fa-brands fa-github"></i>
+                            class="text-4xl fa-brands fa-github"></i>
                     </li>
                 </a>
 
                 <a href="https://www.linkedin.com/in/roberto-r-guti%C3%A9rrez-o-7066b887/">
                     <li class="duration-500 hover:translate-x-1 text-offWhite hover:text-magenta "><i
-                            class="text-3xl fa-brands fa-linkedin"></i>
+                            class="text-4xl fa-brands fa-linkedin"></i>
                     </li>
                 </a>
 
                 <a href="https://wa.me/523338068984?text=Hola! tengo una duda:" target="_blank"
                     class="hover:translate-x-1 duration-500 hover:text-magenta text-[#25d366]">
-                    <li><i class="text-3xl fa-brands fa-whatsapp"></i>
+                    <li><i class="text-4xl fa-brands fa-whatsapp"></i>
                     </li>
                 </a>
             </ul>
         </div>
 
         <!-- jobs -->
-        <div class="w-1/2 p-6 border rounded-br-lg laptop:w-1/4 border-offBlack laptop:p-10 tablet:p-8">
-            <ul class="flex flex-col gap-6 text-offBlack font-archivo">
+        <div class="w-full p-4 laptop:w-1/4 laptop:p-10 tablet:p-8">
+            <ul class="flex flex-col gap-4 text-offBlack font-archivo">
                 <li><a href="#" class="flex items-center justify-start laptop:text-2xl"><i
                             class="text-center fa-solid fa-pencil laptop:text-2xl"></i>&ensp; gráfico</a>
                 </li>
@@ -173,7 +179,7 @@
     </section>
 
     <!-- bottom img -->
-    <img src="./assets/bg-glitch-main.svg" alt="glitch footer" class="object-cover w-full m-0 bg-webbyGreen">
+    <img src="./assets/bg-glitch-main.svg" alt="glitch footer" class="object-cover w-full h-screen m-0 bg-webbyGreen">
 
     <!-- footer -->
     <footer
