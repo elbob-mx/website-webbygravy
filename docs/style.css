@@ -590,6 +590,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -608,6 +612,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-fit {
@@ -877,6 +885,10 @@ video {
 
 .border-r-8 {
   border-right-width: 8px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-offBlack {
