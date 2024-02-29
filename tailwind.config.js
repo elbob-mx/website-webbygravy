@@ -21,6 +21,7 @@ module.exports = {
         archivo: "archivo, sans-serif",
         lexend: "Lexend, sans-serif",
         lexendExa: "Lexend Exa,  sans-serif",
+        kosugi: "Kosugi, sans-serif",
       },
       colors: {
         offBlack: "#181818",

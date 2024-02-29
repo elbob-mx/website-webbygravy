@@ -13,11 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kosugi&family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,1,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./docs/style.css">
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -26,9 +23,9 @@
 <body class="overflow-x-hidden">
 
     <!-- logo -->
-    <section class="flex flex-col h-screen px-0 laptop:px-0 bg-offBlack">
+    <section class="flex flex-col h-screen px-0 bg-offBlack">
         <a href="index.html" class="w-3/4 laptop:w-1/2">
-            <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="px-6 py-12 laptop:px-0 laptop:py-12"></a>
+            <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="py-12 pl-4"></a>
 
         <!-- web description -->
         <h1 class="text-5xl uppercase laptop:text-8xl tablet:text-7xl hd:text-9xl font-archivo text-offWhite">tienes
@@ -39,141 +36,150 @@
 
         <!-- work carousel thing -->
         <div x-data="{}" x-init="$nextTick(() => {
-                                let ul = $refs.servicios;
-                                ul.insertAdjacentHTML('afterend', ul.outerHTML);
-                                ul.nextSibling.setAttribute('aria-hidden', 'true');
-                            })"
+                            let ul = $refs.servicios;
+                            ul.insertAdjacentHTML('afterend', ul.outerHTML);
+                            ul.nextSibling.setAttribute('aria-hidden', 'true');
+                        })"
             class="inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
             <ul x-ref="servicios"
-                class="flex items-center py-1 max-h-fit justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                class="flex items-center py-1 text-3xl laptop:text-4xl text-webbyGreen font-archivo max-h-fit justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">gráfico</p>
+                    <p>gráfico</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">web</p>
+                    <p>web</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">merch</p>
+                    <p>merch</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">branding</p>
+                    <p>branding</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">audio</p>
+                    <p>audio</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">ilustración</p>
+                    <p>ilustración</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">fotografía</p>
+                    <p>fotografía</p>
                 </li>
                 <li>
-                    <p class="text-2xl laptop:text-5xl text-webbyGreen font-archivo">video</p>
+                    <p>video</p>
                 </li>
             </ul>
         </div>
         <div>
             <button class="flex flex-row"><a href="#down" class="duration-500"><span
-                        class="justify-start duration-500 text-7xl material-symbols-sharp text-offWhite hover:text-magenta hover:translate-y-2 laptop:text-9xl">
+                        class="justify-start duration-500 text-7xl material-symbols-sharp text-offWhite hover:text-webbyOrange hover:translate-y-2 laptop:text-[10rem]">
                         arrow_downward
                     </span></a></button>
         </div>
     </section>
 
     <!-- contenido -->
-    <section id="down"
-        class="flex flex-row flex-wrap h-screen px-0 text-base bg-webbyGreen font-archivo laptop:text-lg hd:text-base text-offBlack">
-
-        <div class="w-full px-4 py-10 text-5xl font-medium text-center laptop:text-left font-archivo laptop:text-5xl">
-            <h1>Hola! <i class="text-violet-700 fa-solid fa-handshake-angle"></i> somos
-                <span class="font-extrabold">webbyGravy</span>
+    <section id="down" class="grid h-screen grid-cols-6 p-0 bg-webbyGreen font-archivo text-offBlack">
+        <!-- intro -->
+        <div class="flex flex-wrap col-span-6 px-3 py-3 m-0 text-4xl uppercase tablet:text-8xl font-archivo">
+            <h1>hola! somos webbyGravy
             </h1>
         </div>
 
-        <!-- 1° main -->
+        <!-- 1° main title -->
         <!-- sticky title -->
-        <div class="sticky top-0 w-full px-4 py-1 text-4xl laptop:text-5xl bg-offBlack text-offWhite font-archivo">
+        <div
+            class="sticky top-0 col-span-6 px-3 py-1 text-3xl uppercase laptop:text-6xl bg-offBlack text-offWhite font-archivo">
             nosotros
         </div>
         <!-- sticky title -->
-        <div class="w-2/12 h-auto p-3 bg-offBlack"></div>
-        <!-- sticky title -->
-        <div class="w-10/12 p-6 text-xl tablet:p-6 laptop:p-8 laptop:text-5xl">
-            Trabajamos en múltiples proyectos, ya sea para grandes empresas, innovadoras pymes o startups con objetivos
-            ingeniosos, <span class="font-bold text-violet-700">cuidando siempre sus proyectos como el más
-                importante.</span></div>
+        <div class="col-span-6 px-3 py-6 text-2xl font-light laptop:py-8 tablet:text-3xl">
+            <p>Trabajamos en múltiples proyectos, ya sea para grandes empresas, innovadoras pymes o startups con
+                objetivos
+                ingeniosos, <span class="font-semibold">cuidando siempre sus proyectos como el más
+                    importante.</span></p>
+        </div>
 
         <!-- 2° main -->
         <!-- sticky title -->
-        <div class="sticky top-0 w-full px-4 py-1 text-4xl laptop:text-5xl bg-offBlack text-offWhite font-archivo">
+        <div
+            class="sticky top-0 col-span-6 px-3 py-1 text-3xl uppercase laptop:text-6xl bg-offBlack text-offWhite font-archivo">
             lo que hacemos
         </div>
         <!-- sticky title -->
-        <div class="w-8/12 p-6 text-xl tracking-wider tablet:p-6 laptop:p-4 laptop:text-3xl">
-            <span class="font-bold">Diseño gráfico,
-                desarrollo web,
-                ilustración, identidad y aplicación de tu marca, creación de audio y video</span>, son algunas de
-            nuestras cartas
-            de presentación.
+        <div class="col-span-6 px-3 py-6 text-2xl font-light tablet:col-span-3 laptop:py-8 tablet:text-3xl">
+            <p>Diseño gráfico, desarrollo web, ilustración, identidad y aplicación de tu marca, creación de audio y
+                video, son algunas de nuestras cartas de presentación. <span class="font-semibold">Algunos de nuestros
+                    proyectos:</span></p>
+        </div>
+        <!-- portfolio -->
+        <div class="h-auto col-span-6 px-0 py-0 tablet:col-span-3">
+            <ul class="grid gap-0 bg-offWhite font-archivo">
+                <li
+                    class="px-0 py-4 duration-300 border-[1px] mb-[-1px] border-r-0 border-offBlack hover:border-webbyOrange text-offBlack hover:text-offWhite hover:bg-offBlack">
+                    <a href="#" class="flex items-center justify-center laptop:text-3xl"><i
+                            class="text-center text-webbyOrange fa-solid fa-pen laptop:text-4xl"></i>&ensp;
+                        diseño gráfico</a>
+                </li>
+                <li
+                    class="px-0 py-4 duration-300 border-[1px] mb-[-1px] border-r-0 border-offBlack hover:border-webbyOrange text-offBlack hover:text-offWhite hover:bg-offBlack">
+                    <a href="#" class="flex items-center justify-center laptop:text-3xl"><i
+                            class="text-center text-purple-600 fa-solid fa-globe laptop:text-4xl"></i>&ensp;
+                        desarrollo web</a>
+                </li>
+                <li
+                    class="px-0 py-4 duration-300 border-[1px] mb-[-1px] border-r-0 border-offBlack hover:border-webbyOrange text-offBlack hover:text-offWhite hover:bg-offBlack">
+                    <a href="#" class="flex items-center justify-center laptop:text-3xl"><i
+                            class="text-center text-offBlack fa-solid fa-tshirt laptop:text-4xl"></i>&ensp;
+                        merch / textil</a>
+                </li>
+                <li
+                    class="px-0 py-4 duration-300 border-[1px] border-r-0 mb-[-1px] border-offBlack hover:border-webbyOrange text-offBlack hover:text-offWhite hover:bg-offBlack">
+                    <a href="#" class="flex items-center justify-center laptop:text-3xl"><i
+                            class="text-center text-violet-500 fa-solid fa-pencil laptop:text-4xl"></i>&ensp;
+                        ilustración</a>
+                </li>
+                <li
+                    class="px-0 py-4 duration-300 border-[1px] border-separate border-r-0 border-offBlack hover:border-webbyOrange text-offBlack hover:text-offWhite hover:bg-offBlack">
+                    <a href="#" class="flex items-center justify-center laptop:text-3xl"><i
+                            class="text-center text-green-600 fa-solid fa-music laptop:text-4xl"></i>&ensp;
+                        audio / video</a>
+                </li>
+            </ul>
         </div>
 
-        <div class="w-4/12 border bg-offBlack border-offBlack"></div>
-
-        <!-- comunicate -->
+        <!-- comunicate con nosotros -->
         <div
-            class="w-full p-6 text-lg font-light laptop:w-3/4 bg-offBlack laptop:pl-4 tablet:p-6 font-archivo laptop:text-4xl tablet:text-4xl text-offWhite">
-            <a href="#"><span class="font-bold leading-relaxed duration-200 text-magenta hover:text-offWhite">Comunícate
-                    con
-                    nosotros</span></a>,
-            si hay una
-            idea,<span class="font-bold text-magenta">
-                hay
-                una solución</span>.
+            class="flex flex-col items-center justify-between col-span-6 px-6 py-12 text-2xl uppercase laptop:flex-row bg-offBlack text-offWhite font-archivo">
+            <div><a href="#"><span
+                        class="font-semibold leading-loose duration-200 text-magenta hover:text-webbyOrange">Comunícate
+                        con
+                        nosotros</span></a>, si hay una idea,<span class="font-bold text-magenta"> hay una
+                    solución</span></div>
 
-            <ul class="flex-row justify-start hidden gap-6 pt-4 laptop:flex laptop:gap-16">
+            <ul class="flex-row justify-start gap-6 laptop:flex laptop:gap-14">
                 <a href="mailto:webbygravy.mx@gmail.com">
                     <li class="duration-500 text-offWhite hover:text-magenta hover:translate-x-1"><i
-                            class="text-4xl fa-solid fa-envelope "></i>
+                            class="text-3xl fa-solid fa-envelope "></i>
                     </li>
                 </a>
 
                 <a href="https://github.com/elbob-mx">
                     <li class="duration-500 hover:translate-x-1 text-offWhite hover:text-magenta "><i
-                            class="text-4xl fa-brands fa-github"></i>
+                            class="text-3xl fa-brands fa-github"></i>
                     </li>
                 </a>
 
                 <a href="https://www.linkedin.com/in/roberto-r-guti%C3%A9rrez-o-7066b887/">
                     <li class="duration-500 hover:translate-x-1 text-offWhite hover:text-magenta "><i
-                            class="text-4xl fa-brands fa-linkedin"></i>
+                            class="text-3xl fa-brands fa-linkedin"></i>
                     </li>
                 </a>
 
                 <a href="https://wa.me/523338068984?text=Hola! tengo una duda:" target="_blank"
                     class="hover:translate-x-1 duration-500 hover:text-magenta text-[#25d366]">
-                    <li><i class="text-4xl fa-brands fa-whatsapp"></i>
+                    <li><i class="text-3xl fa-brands fa-whatsapp"></i>
                     </li>
                 </a>
-            </ul>
-        </div>
-
-        <!-- jobs -->
-        <div class="w-full p-4 border-b laptop:w-1/4 border-offBlack laptop:p-10 tablet:p-8">
-            <ul class="flex flex-col gap-4 text-offBlack font-archivo">
-                <li><a href="#" class="flex items-center justify-start laptop:text-2xl"><i
-                            class="text-center fa-solid fa-pencil laptop:text-2xl"></i>&ensp; gráfico</a>
-                </li>
-                <li><a href="#" class="flex items-center justify-start laptop:text-2xl"><i
-                            class="text-center fa-solid fa-desktop laptop:text-2xl"></i>&ensp; web</a></li>
-                <li><a href="#" class="flex items-center justify-start laptop:text-2xl"><i
-                            class="text-center fa-solid fa-tshirt laptop:text-2xl"></i>
-                        &ensp; merch</a></li>
-                <li> <a href="#" class="flex items-center justify-start laptop:text-2xl"><i
-                            class="text-center rotate-45 fa-solid fa-brush laptop:text-2xl"></i>
-                        &ensp; sketch</a></li>
-                <li><a href="#" class="flex items-center justify-start laptop:text-2xl"><i
-                            class="text-center fa-solid fa-music laptop:text-2xl"></i>
-                        &ensp; audio</a></li>
             </ul>
         </div>
     </section>
