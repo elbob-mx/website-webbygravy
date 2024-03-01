@@ -24,7 +24,6 @@ module.exports = {
         lexendExa: "Lexend Exa, sans-serif",
         source: "Source Code Pro, monospace",
         inconsolata: "Inconsolata, monospace",
-        kosugi: "Kosugi, sans-serif",
       },
       colors: {
         offBlack: "#181818",
