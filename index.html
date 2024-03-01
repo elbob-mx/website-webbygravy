@@ -24,7 +24,7 @@
 
     <!-- logo -->
     <section class="flex flex-col h-screen px-0 bg-offBlack">
-        <a href="index.html" class="w-3/4 laptop:w-1/2">
+        <a href="index.html" class="w-3/4 laptop:w-1/2 mobileHor:w-1/4">
             <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="py-12 pl-4"></a>
 
         <!-- web description -->
@@ -71,7 +71,7 @@
         </div>
         <div>
             <button class="flex flex-row"><a href="#down" class="duration-500"><span
-                        class="justify-start duration-500 text-7xl material-symbols-sharp text-offWhite hover:text-webbyOrange hover:translate-y-2 laptop:text-[10rem]">
+                        class="justify-start duration-500 mobileHor:text-5xl text-7xl material-symbols-sharp text-offWhite hover:text-webbyOrange hover:translate-y-2 laptop:text-[10rem]">
                         arrow_downward
                     </span></a></button>
         </div>
@@ -114,15 +114,14 @@
             <!-- sticky title -->
             <div
                 class="col-span-6 px-3 py-6 text-lg font-light tablet:col-span-3 laptop:px-8 laptop:py-8 tablet:text-3xl">
-                <p class="pl-4 border-l-4 border-offBlack">Diseño gráfico, desarrollo web, ilustración, identidad y
+                <p class="pl-2 border-l-4 laptop:pl-4 laptop:border-l-4 border-offBlack">Diseño gráfico, desarrollo web,
+                    ilustración, identidad y
                     aplicación de tu marca, creación de audio y
                     video, son algunas de nuestras cartas de presentación. <span class="font-semibold">Algunos de
                         nuestros
                         proyectos</span>
-                    <!-- flecha abajo -->
-                    <i class="hidden pl-1 text-sm font-light text-magenta fa-solid fa-turn-down"></i>
                     <!-- flechaderecha -->
-                    <i class="hidden fa-solid fa-arrow-right-long bigPhoneHor:inline-block"></i>
+                    <i class="fa-solid fa-arrow-right-long text-offBlack"></i>
                 </p>
             </div>
             <!-- portfolio -->
@@ -168,38 +167,36 @@
 
             <!-- comunicate con nosotros -->
             <div
-                class="flex flex-col items-center justify-between col-span-6 px-6 py-8 text-2xl uppercase laptop:flex-row bg-offBlack text-offWhite font-archivo">
-                <div><a href="#"><span
-                            class="font-semibold leading-loose duration-200 text-magenta hover:text-webbyOrange">Comunícate
+                class="flex flex-col items-center justify-between h-auto col-span-6 px-6 text-2xl uppercase py-9 laptop:flex-row bg-offBlack text-offWhite font-archivo">
+                <div><a href="#"><span class="font-semibold duration-200 text-magenta hover:text-webbyOrange">Comunícate
                             con
-                            nosotros</span></a>, si hay una idea,<span class="font-bold text-magenta"> hay una
+                            nosotros</span></a>, si hay una idea,<span class="font-bold text-webbyGreen"> hay una
                         solución</span></div>
 
-                <ul class="flex-row justify-start gap-6 laptop:flex laptop:gap-14">
-                    <a href="mailto:webbygravy.mx@gmail.com">
-                        <li class="duration-500 text-offWhite hover:text-magenta hover:translate-x-1"><i
-                                class="text-3xl fa-solid fa-envelope "></i>
-                        </li>
-                    </a>
+                <ul class="flex flex-row mt-3 gap-x-12 laptop:mt-0 laptop:gap-14">
 
-                    <a href="https://github.com/elbob-mx">
-                        <li class="duration-500 hover:translate-x-1 text-offWhite hover:text-magenta "><i
-                                class="text-3xl fa-brands fa-github"></i>
-                        </li>
-                    </a>
+                    <li class="duration-500 text-offWhite hover:text-magenta hover:translate-x-1"><a
+                            href="mailto:webbygravy.mx@gmail.com">
+                            <i class="text-3xl fa-solid fa-envelope "></i>
+                        </a></li>
 
-                    <a href="https://www.linkedin.com/in/roberto-r-guti%C3%A9rrez-o-7066b887/">
-                        <li class="duration-500 hover:translate-x-1 text-offWhite hover:text-magenta "><i
-                                class="text-3xl fa-brands fa-linkedin"></i>
-                        </li>
-                    </a>
+                    <li class="duration-500 text-offWhite hover:text-magenta hover:translate-x-1"><a
+                            href="https://github.com/elbob-mx"><i class="text-3xl fa-brands fa-github"></i>
+                        </a>
+                    </li>
 
-                    <a href="https://wa.me/523338068984?text=Hola! tengo una duda:" target="_blank"
-                        class="hover:translate-x-1 duration-500 hover:text-magenta text-[#25d366]">
-                        <li><i class="text-3xl fa-brands fa-whatsapp"></i>
-                        </li>
-                    </a>
+                    <li class="duration-500 hover:translate-x-1 text-offWhite hover:text-magenta"><a
+                            href="https://www.linkedin.com/in/roberto-r-guti%C3%A9rrez-o-7066b887/">
+                            <i class="text-3xl fa-brands fa-linkedin"></i>
+                        </a></li>
+
+                    <li class="duration-500 hover:translate-x-1 text-offWhite hover:text-magenta"><a
+                            href="https://wa.me/523338068984?text=Hola! tengo una duda:" target="_blank"
+                            class="hover:translate-x-1 duration-500 hover:text-magenta text-[#25d366]">
+                            <i class="text-3xl fa-brands fa-whatsapp"></i>
+                        </a></li>
                 </ul>
+
             </div>
         </section>
     </main>
