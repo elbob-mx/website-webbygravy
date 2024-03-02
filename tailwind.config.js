@@ -24,6 +24,7 @@ module.exports = {
         lexendExa: "Lexend Exa, sans-serif",
         source: "Source Code Pro, monospace",
         inconsolata: "Inconsolata, monospace",
+        wave: "Wavefont, system-ui",
       },
       colors: {
         offBlack: "#181818",
