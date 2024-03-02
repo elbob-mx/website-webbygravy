@@ -569,6 +569,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -616,6 +620,10 @@ video {
 
 .w-60 {
   width: 15rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .-rotate-12 {
@@ -910,6 +918,19 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[6pt\] {
+  font-size: 6pt;
+}
+
+.text-\[6px\] {
+  font-size: 6px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1023,6 +1044,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-webbyPink {
   --tw-shadow-color: #FF1974;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1034,6 +1061,10 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .\[mask-image\:_linear-gradient\(to_right\2c transparent_0\2c _black_128px\2c _black_calc\(100\%-128px\)\2c transparent_100\%\)\] {
@@ -1064,6 +1095,11 @@ video {
 .hover\:text-webbyPink:hover {
   --tw-text-opacity: 1;
   color: rgb(255 25 116 / var(--tw-text-opacity));
+}
+
+.hover\:text-webbyGreen:hover {
+  --tw-text-opacity: 1;
+  color: rgb(167 243 208 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1105,6 +1141,30 @@ video {
 
   .laptop\:w-1\/2 {
     width: 50%;
+  }
+
+  .laptop\:w-64 {
+    width: 16rem;
+  }
+
+  .laptop\:w-44 {
+    width: 11rem;
+  }
+
+  .laptop\:w-full {
+    width: 100%;
+  }
+
+  .laptop\:w-1\/4 {
+    width: 25%;
+  }
+
+  .laptop\:w-1\/12 {
+    width: 8.333333%;
+  }
+
+  .laptop\:w-1\/6 {
+    width: 16.666667%;
   }
 
   .laptop\:max-w-fit {
@@ -1208,6 +1268,21 @@ video {
   .laptop\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .laptop\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .laptop\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .laptop\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .laptop\:text-offBlack {
