@@ -1266,6 +1266,11 @@ video {
 }
 
 @media (min-width: 976px) {
+  .laptop\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .laptop\:mt-0 {
     margin-top: 0px;
   }
