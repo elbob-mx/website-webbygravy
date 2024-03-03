@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: ["./*.html"],
   theme: {
@@ -43,5 +46,41 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // duration
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "animate-duration": (value) => ({
+            animationDuration: value,
+          }),
+        },
+        { values: theme("transitionDuration") }
+      );
+    }),
+
+    // delay
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "animate-delay": (value) => ({
+            animationDelay: value,
+          }),
+        },
+        { values: theme("transitionDelay") }
+      );
+    }),
+
+    // ease
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "animate-ease": (value) => ({
+            animationTimingFunction: value,
+          }),
+        },
+        { values: theme("transitionTimingFunction") }
+      );
+    }),
+  ],
 };
