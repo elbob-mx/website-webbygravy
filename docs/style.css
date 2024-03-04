@@ -762,6 +762,18 @@ video {
   padding: 3rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1118,6 +1130,10 @@ video {
   .laptop\:bg-webbyGreen {
     --tw-bg-opacity: 1;
     background-color: rgb(167 243 208 / var(--tw-bg-opacity));
+  }
+
+  .laptop\:p-12 {
+    padding: 3rem;
   }
 
   .laptop\:px-3 {
