@@ -725,15 +725,6 @@ video {
   border-radius: 0.375rem;
 }
 
-.border-l-4 {
-  border-left-width: 4px;
-}
-
-.border-offBlack {
-  --tw-border-opacity: 1;
-  border-color: rgb(24 24 24 / var(--tw-border-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -812,29 +803,12 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -851,6 +825,14 @@ video {
 
 .font-source {
   font-family: Source Code Pro, monospace;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-inconsolata {
+  font-family: Inconsolata, monospace;
 }
 
 .text-2xl {
@@ -892,11 +874,6 @@ video {
   line-height: 1rem;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -923,6 +900,10 @@ video {
 
 .leading-relaxed {
   line-height: 1.625;
+}
+
+.leading-loose {
+  line-height: 2;
 }
 
 .tracking-wider {
@@ -952,10 +933,6 @@ video {
 .text-offWhite {
   --tw-text-opacity: 1;
   color: rgb(242 242 242 / var(--tw-text-opacity));
-}
-
-.text-transparent {
-  color: transparent;
 }
 
 .text-webbyGreen {
@@ -991,10 +968,6 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .\[mask-image\:_linear-gradient\(to_right\2c transparent_0\2c _black_128px\2c _black_calc\(100\%-128px\)\2c transparent_100\%\)\] {
@@ -1033,13 +1006,6 @@ video {
 .hover\:text-webbyPink:hover {
   --tw-text-opacity: 1;
   color: rgb(255 25 116 / var(--tw-text-opacity));
-}
-
-@media (min-width: 0px) {
-  .small\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
 }
 
 @media (min-width: 375px) {
@@ -1085,6 +1051,16 @@ video {
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .tablet\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .tablet\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 976px) {
@@ -1095,6 +1071,15 @@ video {
 
   .laptop\:mt-0 {
     margin-top: 0px;
+  }
+
+  .laptop\:h-auto {
+    height: auto;
+  }
+
+  .laptop\:max-h-max {
+    max-height: -moz-max-content;
+    max-height: max-content;
   }
 
   .laptop\:w-1\/2 {
@@ -1140,10 +1125,6 @@ video {
     gap: 5rem;
   }
 
-  .laptop\:border-l-4 {
-    border-left-width: 4px;
-  }
-
   .laptop\:bg-webbyGreen {
     --tw-bg-opacity: 1;
     background-color: rgb(167 243 208 / var(--tw-bg-opacity));
@@ -1161,6 +1142,11 @@ video {
   .laptop\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .laptop\:px-80 {
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 
   .laptop\:py-3 {
@@ -1183,12 +1169,51 @@ video {
     padding-bottom: 2rem;
   }
 
-  .laptop\:pl-4 {
-    padding-left: 1rem;
+  .laptop\:py-80 {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .laptop\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .laptop\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .laptop\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .laptop\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .laptop\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .laptop\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .laptop\:pr-6 {
     padding-right: 1.5rem;
+  }
+
+  .laptop\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .laptop\:pr-0 {
+    padding-right: 0px;
   }
 
   .laptop\:text-3xl {
@@ -1220,13 +1245,28 @@ video {
     line-height: 1.5rem;
   }
 
-  .laptop\:text-offBlack {
-    --tw-text-opacity: 1;
-    color: rgb(24 24 24 / var(--tw-text-opacity));
+  .laptop\:leading-loose {
+    line-height: 2;
   }
 
-  .laptop\:text-transparent {
-    color: transparent;
+  .laptop\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .laptop\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .laptop\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .laptop\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .laptop\:leading-none {
+    line-height: 1;
   }
 
   .laptop\:animate-duration-\[4s\] {
