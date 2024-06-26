@@ -20,16 +20,12 @@
 <body class="overflow-x-hidden">
 
     <!-- logo -->
-    <section class="flex flex-col h-screen px-0 bg-offBlack">
-        <a href="index.html" class="w-3/4 laptop:w-1/2 mobileHor:w-1/4">
+    <section class="flex flex-col justify-center h-screen px-12 fhd:px-40 bg-offBlack">
+        <a href="index.html" class="w-3/4 mx-auto tablet:mx-0 laptop:w-1/2 mobileHor:w-1/4">
             <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="py-12 pl-4"></a>
 
         <!-- web description -->
-        <h1 class="text-5xl uppercase laptop:text-8xl tablet:text-7xl hd:text-9xl font-archivo text-offWhite"><span>tienes
-                una idea</span>,<br>
-            <span class="text-webbyGreen">hagámos</span><br>
-            que destaque.
-        </h1>
+        <h1 class="text-5xl uppercase laptop:text-8xl tablet:text-7xl hd:text-9xl font-archivo text-offWhite"><span>tienes una idea</span>,<br><span class="text-webbyGreen">hagámos</span><br>que destaque.</h1>
 
         <!-- work carousel thing -->
         <div x-data="{}" x-init="$nextTick(() => {
@@ -73,63 +69,63 @@
 
     <!-- contenido -->
     <main class="bg-offBlack">
-        <section id="down" class="grid grid-cols-6 p-0 laptop:bg-webbyGreen bg-webbyGreen font-archivo text-offBlack">
+        <section id="down" class="grid grid-cols-6 p-0 laptop:bg-webbyGreen bg-webbyGreen font-archivo text-offBlack hd:h-screen">
             <!-- intro -->
-            <div class="flex flex-wrap col-span-6 px-3 laptop:px-3 py-4 m-0 text-5xl font-bold uppercase laptop:py-7 mobile:text-4xl mobileXL:text-[45px] tablet:text-7xl font-archivo">
+            <div class="flex flex-wrap col-span-6 px-3 laptop:px-3 py-4 m-0 text-5xl font-bold uppercase laptop:py-7 mobile:text-4xl mobileXL:text-[45px] tablet:text-7xl fhd:px-40 font-archivo">
                 <h1 class="font-medium"><span class="font-bold font-lexend">hola!</span><i class="px-2 py-1 rounded-md shadow-lg laptop:px-3 -rotate-12 shadow-webbyPink bg-offBlack fa fa-handshake-o text-webbyPink" aria-hidden="true"></i></i>somos webbyGravy.
                 </h1>
             </div>
 
             <!-- 1° main title -->
             <!-- sticky title -->
-            <div class="sticky top-0 col-span-6 px-3 py-1 text-3xl uppercase laptop:py-3 laptop:text-5xl bg-offBlack text-offWhite font-archivo">
+            <div class="sticky top-0 col-span-6 px-3 py-1 text-3xl uppercase laptop:py-3 laptop:text-5xl bg-offBlack text-offWhite font-archivo fhd:px-40">
                 nosotros
             </div>
             <!-- sticky title -->
-            <div class="col-span-6 px-6 py-6 text-xl font-light leading-normal laptop:py-5 laptop:px-10 laptop:text-4xl laptop:leading-relaxed">
+            <div class="col-span-6 px-6 py-6 text-xl font-light leading-normal laptop:py-5 laptop:px-10 laptop:text-4xl laptop:leading-relaxed fhd:px-40">
                 <p class="">Trabajamos en múltiples proyectos, ya sea para grandes empresas, innovadoras pymes o startups con ingeniosos objetivos, <span class="font-bold">cuidando siempre tús metas como las más importante.</span></p>
             </div>
 
             <!-- 2° main -->
             <!-- sticky title -->
-            <div class="sticky top-0 col-span-6 px-3 py-1 text-3xl uppercase laptop:py-3 laptop:text-5xl bg-offBlack text-offWhite font-archivo">
+            <div class="sticky top-0 col-span-6 px-3 py-1 text-3xl uppercase laptop:py-3 laptop:text-5xl bg-offBlack text-offWhite font-archivo fhd:px-40">
                 lo que hacemos
             </div>
             <!-- sticky title -->
-            <div class="col-span-6 px-6 py-6 font-medium leading-relaxed laptop:font-extralight laptop:leading-normal tablet:col-span-3 laptop:px-10 laptop:py-10 tablet:text-5xl">
+            <div class="col-span-6 px-6 py-6 font-medium leading-relaxed laptop:font-extralight laptop:leading-normal tablet:col-span-3 laptop:px-10 laptop:py-10 tablet:text-5xl hd:pl-40">
                 <p class="">Diseño gráfico, desarrollo web, ilustración, identidad y aplicación de tu marca, creación de audio y video. <span class="font-bold">Algunos de nuestros trabajos:</span></p>
             </div>
 
             <!-- portfolio -->
-            <div class="grid grid-flow-col-dense col-span-6 px-6 pb-6 laptop:py-10 laptop:px-10 tablet:col-span-3">
-                <ul class="font-bold divide-y divide-webbyGreen font-archivo divide-dotted bg-offBlack">
+            <div class="grid items-center grid-flow-col-dense col-span-6 px-6 pb-6 laptop:py-10 laptop:px-10 tablet:col-span-3 hd:pr-40">
+                <ul class="font-bold divide-y divide-webbyGreen font-archivo divide-dotted bg-webbyGreen">
 
                     <!-- diseño grafico -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-neutral-700 hover:text-webbyPink hover:bg-offBlack hover:font-bold">
+                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
                         <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-pen laptop:text-4xl"></i>&ensp;
                             Diseño gráfico</a>
                     </li>
 
                     <!-- desarrollo web -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-neutral-700 hover:text-webbyPink hover:bg-offBlack hover:font-bold">
+                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
                         <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-globe laptop:text-4xl"></i>&ensp;
                             desarrollo web</a>
                     </li>
 
                     <!-- merch -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-neutral-700 hover:text-webbyPink hover:bg-offBlack hover:font-bold">
+                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
                         <a href="#" class="flex items-center justify-center py-3 text-2xl text-we laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-tshirt laptop:text-4xl"></i>&ensp;
                             merch / textil</a>
                     </li>
 
                     <!-- ilustracion -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-neutral-700 hover:text-webbyPink hover:bg-offBlack hover:font-bold">
+                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
                         <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-paintbrush laptop:text-4xl"></i>&ensp;
                             ilustración</a>
                     </li>
 
                     <!-- audio video -->
-                    <li class="duration-200 divide-y animation-duration laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-neutral-700 hover:text-webbyPink hover:bg-offBlack hover:font-bold">
+                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
                         <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-music laptop:text-4xl"></i>&ensp;
                             audio / video</a>
                     </li>
@@ -138,10 +134,10 @@
             </div>
 
             <!-- comunicate con nosotros -->
-            <div class="flex flex-col items-center justify-between h-auto col-span-6 px-6 text-lg uppercase laptop:text-2xl py-14 laptop:flex-row bg-offBlack text-offWhite font-archivo">
-                <div><a href="#"><span class="font-semibold duration-200 text-webbyPink hover:text-webbyGreen">Comunícate con nosotros</span></a>, si hay una idea,<span class="font-bold text-webbyGreen"> hay una solución</span><i class="px-2 py-1 rounded-md shadow-lg laptop:px-3 -rotate-6 shadow-webbyPink bg-offBlack fa fa-lightbulb text-webbyPink" aria-hidden="true"></i></div>
+            <div class="flex flex-col items-center justify-between h-auto col-span-6 px-6 text-lg uppercase laptop:text-2xl py-14 laptop:flex-row bg-offBlack text-offWhite font-archivo fhd:px-40">
+                <div><a href="mailto:webbygravy.mx@gmail.com"><span class="font-semibold duration-200 text-webbyPink hover:text-webbyGreen">Comunícate con nosotros</span></a>, si hay una idea,<span class="font-bold text-webbyGreen"> hay una solución</span><i class="px-2 py-1 rounded-md shadow-lg laptop:px-3 -rotate-6 shadow-webbyPink bg-offBlack fa fa-lightbulb text-webbyPink" aria-hidden="true"></i></div>
                 <div class="flex flex-row w-full laptop:max-w-fit">
-                    <ul class="flex flex-row justify-between w-full mt-10 laptop:mt-0 laptop:gap-14">
+                    <ul class="flex flex-row justify-between w-full px-10 mx-auto mt-10 fhd:px-0 laptop:mt-0 laptop:gap-14">
                         <li class="duration-500 text-offWhite hover:text-webbyPink hover:translate-x-1"><a href="mailto:webbygravy.mx@gmail.com">
                                 <i class="text-3xl fa-solid fa-envelope "></i>
                             </a></li>
