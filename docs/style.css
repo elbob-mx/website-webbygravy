@@ -565,11 +565,6 @@ video {
   margin-right: auto;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -620,10 +615,6 @@ video {
   width: 100%;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
 .-rotate-12 {
   --tw-rotate: -12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -670,10 +661,6 @@ video {
 
 .flex-nowrap {
   flex-wrap: nowrap;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .items-start {
@@ -740,11 +727,6 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-neutral-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
-}
-
 .bg-offBlack {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 24 / var(--tw-bg-opacity));
@@ -763,9 +745,14 @@ video {
   padding: 1.5rem;
 }
 
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-2 {
@@ -813,24 +800,14 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-6 {
@@ -839,6 +816,18 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -988,11 +977,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-offBlack:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
-}
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -1005,6 +989,21 @@ video {
 .hover\:text-webbyPink:hover {
   --tw-text-opacity: 1;
   color: rgb(255 25 116 / var(--tw-text-opacity));
+}
+
+.focus\:text-webbyGreen:focus {
+  --tw-text-opacity: 1;
+  color: rgb(167 243 208 / var(--tw-text-opacity));
+}
+
+.focus\:text-webbyPink:focus {
+  --tw-text-opacity: 1;
+  color: rgb(255 25 116 / var(--tw-text-opacity));
+}
+
+.active\:text-webbyGreen:active {
+  --tw-text-opacity: 1;
+  color: rgb(167 243 208 / var(--tw-text-opacity));
 }
 
 @media (min-width: 375px) {
@@ -1025,6 +1024,18 @@ video {
     width: 25%;
   }
 
+  .mobileHor\:w-1\/2 {
+    width: 50%;
+  }
+
+  .mobileHor\:w-full {
+    width: 100%;
+  }
+
+  .mobileHor\:w-3\/4 {
+    width: 75%;
+  }
+
   .mobileHor\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1039,11 +1050,6 @@ video {
   .tablet\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .tablet\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .tablet\:text-5xl {
@@ -1077,6 +1083,10 @@ video {
 
   .laptop\:w-64 {
     width: 16rem;
+  }
+
+  .laptop\:w-full {
+    width: 100%;
   }
 
   .laptop\:max-w-fit {
@@ -1137,11 +1147,6 @@ video {
   .laptop\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-  }
-
-  .laptop\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .laptop\:text-2xl {
@@ -1229,21 +1234,6 @@ video {
     height: 100vh;
   }
 
-  .hd\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .hd\:px-60 {
-    padding-left: 15rem;
-    padding-right: 15rem;
-  }
-
-  .hd\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .hd\:pl-40 {
     padding-left: 10rem;
   }
@@ -1259,14 +1249,14 @@ video {
 }
 
 @media (min-width: 1440px) {
-  .fhd\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
   .fhd\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .fhd\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
