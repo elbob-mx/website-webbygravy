@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Wavefont:wght@4..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,1,0" />
-    <link rel="stylesheet" href="./docs/style.css">
+    <link rel="stylesheet" href="./resources/style.css">
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -21,11 +21,11 @@
 
     <!-- logo -->
     <section class="flex flex-col justify-center h-screen px-12 fhd:px-40 bg-offBlack">
-        <a href="index.html" class="w-3/4 tablet:mx-0 laptop:w-1/2 mobileHor:w-3/4">
-            <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="px-0 py-14"></a>
+        <a href="index.html" class="tablet:mx-0">
+            <img src="./assets/wg-logo.svg" alt="webbyGravy logo" class="w-full px-0 ipad:w-1/2 py-14"></a>
 
         <!-- web description -->
-        <h1 class="text-5xl uppercase laptop:text-8xl tablet:text-7xl hd:text-9xl font-archivo text-offWhite"><span>tienes una idea</span>,<br><span class="text-webbyGreen">hagámos</span><br>que destaque.</h1>
+        <h1 class="text-5xl uppercase laptop:text-8xl tablet:text-7xl hd:text-9xl font-archivo text-offWhite"><span>tienes una idea</span>,<br><span class="text-webbyGreen">hagamos</span><br>que destaque.</h1>
 
         <!-- work carousel thing -->
         <div x-data="{}" x-init="$nextTick(() => {
@@ -33,7 +33,7 @@
                             ul.insertAdjacentHTML('afterend', ul.outerHTML);
                             ul.nextSibling.setAttribute('aria-hidden', 'true');
                         })" class="inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-            <ul x-ref="servicios" class="flex items-center py-1 text-3xl laptop:text-5xl text-webbyGreen font-archivo max-h-fit justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            <ul x-ref="servicios" class="flex items-center py-1 text-3xl laptop:text-5xl text-webbyGreen font-archivo max-h-fit justify-center tablet:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                 <li>
                     <p>gráfico</p>
                 </li>
@@ -71,76 +71,86 @@
     </section>
 
     <!-- contenido -->
-    <main class="bg-offBlack">
-        <section id="down" class="grid grid-cols-6 p-0 laptop:bg-webbyGreen bg-webbyGreen font-archivo text-offBlack hd:h-screen">
-            <!-- intro -->
-            <div class="flex flex-wrap col-span-6 px-3 laptop:px-3 py-4 m-0 text-5xl font-bold uppercase laptop:py-7 mobile:text-4xl mobileXL:text-[45px] tablet:text-7xl fhd:px-40 font-archivo">
-                <h1 class="font-medium"><span class="font-bold font-lexend">hola!</span><i class="px-2 py-1 rounded-md shadow-lg laptop:px-3 -rotate-12 shadow-webbyPink bg-offBlack fa fa-handshake-o text-webbyPink" aria-hidden="true"></i></i>somos webbyGravy.
+    <main class="grid grid-cols-1 ipad:grid-cols-2 bg-offBlack">
+
+        <section id="down" class="col-span-1 bg-webbyGreen ipad:col-span-2 font-archivo text-offBlack">
+
+            <!-- main heading -->
+            <div class="col-span-1 px-6 py-6 ipad:col-span-2">
+                <h1 class="text-4xl font-medium uppercase hd:text-8xl"><span class="font-bold font-lexend">hola!</span><i class="px-2 py-1 rounded-md shadow-lg laptop:px-3 -rotate-12 shadow-webbyPink bg-offBlack fa fa-handshake-o text-webbyPink" aria-hidden="true"></i></i>somos webbyGravy.
                 </h1>
             </div>
+            <!-- end main heading -->
 
-            <!-- 1° main title -->
-            <!-- sticky title -->
-            <div class="sticky top-0 col-span-6 px-3 py-1 text-3xl uppercase laptop:py-3 laptop:text-5xl bg-offBlack text-offWhite font-archivo fhd:px-40">
+            <!-- nosotros sticky title -->
+            <h2 class="sticky top-0 col-span-1 px-6 py-1 text-3xl uppercase hd:text-5xl hd:col-span-2 bg-offBlack text-offWhite">
                 nosotros
-            </div>
-            <!-- sticky title -->
-            <div class="col-span-6 px-6 py-6 text-xl font-light leading-normal laptop:py-5 laptop:px-10 laptop:text-4xl laptop:leading-relaxed fhd:px-40">
-                <p class="">Trabajamos en múltiples proyectos, ya sea para grandes empresas, innovadoras pymes o startups con ingeniosos objetivos, <span class="font-bold">cuidando siempre tús metas como las más importante.</span></p>
+            </h2>
+            <!-- end nosotros sticky title -->
+
+            <div class="grid grid-cols-1 gap-4 px-6 py-6 text-xl hd:grid-cols-2 hd:col-span-2 hd:px-0 hd:py-0 hd:items-center bg-webbyGreen">
+                <p class="hd:px-12 hd:py-12 hd:text-3xl hd:leading-relaxed">Trabajamos en múltiples proyectos, ya sea para grandes empresas, innovadoras pymes o startups con ingeniosos objetivos, <span class="font-bold text-webbyPink">cuidando siempre tús metas como las más importante.</span></p>
+                <img src="./job samples/sample09.png" alt="test pic" class="object-cover rounded-lg hd:p-12">
             </div>
 
             <!-- 2° main -->
             <!-- sticky title -->
-            <div class="sticky top-0 col-span-6 px-3 py-1 text-3xl uppercase laptop:py-3 laptop:text-5xl bg-offBlack text-offWhite font-archivo fhd:px-40">
+            <h2 class="sticky top-0 col-span-1 px-6 py-1 text-3xl uppercase hd:text-5xl ipad:col-span-2 bg-offBlack text-offWhite">
                 lo que hacemos
-            </div>
+            </h2>
             <!-- end sticky title -->
 
             <!-- hacemos -->
-            <div class="grid items-center col-span-6 px-6 py-6 font-medium leading-relaxed laptop:font-extralight laptop:leading-normal tablet:col-span-3 laptop:px-10 laptop:py-10 tablet:text-5xl hd:pl-40 h-fit">
-                <p>Diseño gráfico, desarrollo web, ilustración, identidad y aplicación de tu marca, creación de audio y video. <span class="font-bold">Algunos de nuestros trabajos:</span></p>
+            <div class="grid grid-cols-1 gap-0 px-6 py-6 text-xl hd:gap-10 hd:items-center hd:grid-cols-4 hd:px-6 hd:py-12">
+                <img src="./job samples/sample07.png" alt="test pic" class="rounded-lg">
+                <div>
+                    <p class="py-6 hd:pl-6 hd:pr-6 hd:py-0 hd:text-xl hd:leading-relaxed">Diseño gráfico, desarrollo web, ilustración, identidad y aplicación de tu marca, creación de audio y video.</p>
+                    <p class="pb-6 text-3xl font-bold duration-300 hd:pl-6 hd:pb-0 hd:pr-6 hd:py-3 text-webbyPink hd:text-3xl hd:leading-tight hover:translate-x-2">Algunos de nuestros proyectos :</p>
+                </div>
+
+                <!-- portfolio -->
+                <div class="grid items-center col-span-1 hd:col-span-2">
+                    <ul class="font-bold divide-y divide-webbyGreen font-archivo divide-dotted bg-webbyGreen">
+
+                        <!-- diseño grafico -->
+                        <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold group">
+                            <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-6 laptop:text-3xl"><i class="text-center duration-300 group-hover:text-offWhite text-webbyPink fa-solid fa-pen laptop:text-4xl"></i>&ensp;
+                                diseño gráfico</a>
+                        </li>
+
+                        <!-- desarrollo web -->
+                        <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold group">
+                            <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-6 laptop:text-3xl"><i class="text-center duration-300 group-hover:text-offWhite text-webbyPink fa-solid fa-globe laptop:text-4xl"></i>&ensp;
+                                desarrollo web</a>
+                        </li>
+
+                        <!-- merch -->
+                        <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold group">
+                            <a href="#" class="flex items-center justify-center py-3 text-2xl text-we laptop:py-6 laptop:text-3xl"><i class="text-center duration-300 text-webbyPink fa-solid fa-tshirt laptop:text-4xl group-hover:text-offWhite"></i>&ensp;
+                                merch / promo</a>
+                        </li>
+
+                        <!-- ilustracion -->
+                        <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold group">
+                            <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-6 laptop:text-3xl"><i class="text-center duration-300 text-webbyPink fa-solid fa-paintbrush laptop:text-4xl group-hover:text-offWhite"></i>&ensp;
+                                ilustración</a>
+                        </li>
+
+                        <!-- audio video -->
+                        <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold group">
+                            <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-6 laptop:text-3xl"><i class="text-center duration-300 text-webbyPink fa-solid fa-music laptop:text-4xl group-hover:text-offWhite"></i>&ensp;
+                                audio / video</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
             <!-- end hacemos  -->
 
-            <!-- portfolio -->
-            <div class="grid items-center grid-flow-col-dense col-span-6 px-6 pb-6 laptop:py-10 laptop:px-10 tablet:col-span-3 hd:pr-40">
-                <ul class="font-bold divide-y divide-webbyGreen font-archivo divide-dotted bg-webbyGreen">
 
-                    <!-- diseño grafico -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
-                        <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-pen laptop:text-4xl"></i>&ensp;
-                            diseño gráfico</a>
-                    </li>
-
-                    <!-- desarrollo web -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
-                        <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-globe laptop:text-4xl"></i>&ensp;
-                            desarrollo web</a>
-                    </li>
-
-                    <!-- merch -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
-                        <a href="#" class="flex items-center justify-center py-3 text-2xl text-we laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-tshirt laptop:text-4xl"></i>&ensp;
-                            merch / promo</a>
-                    </li>
-
-                    <!-- ilustracion -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
-                        <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-paintbrush laptop:text-4xl"></i>&ensp;
-                            ilustración</a>
-                    </li>
-
-                    <!-- audio video -->
-                    <li class="duration-200 divide-y laptop:hover:outline laptop:hover:outline-4 laptop:hover:outline-webbyPink laptop:hover:-translate-y-3 laptop:hover:-translate-x-3 text-offWhite laptop:hover:shadow-xl laptop:hover:shadow-webbyPink bg-offBlack hover:text-webbyPink hover:font-bold">
-                        <a href="#" class="flex items-center justify-center py-3 text-2xl laptop:py-3 laptop:text-3xl"><i class="text-center text-webbyPink fa-solid fa-music laptop:text-4xl"></i>&ensp;
-                            audio / video</a>
-                    </li>
-
-                </ul>
-            </div>
 
             <!-- comunicate con nosotros -->
-            <div class="flex flex-col items-center justify-between h-auto col-span-6 px-6 text-lg uppercase laptop:text-2xl py-14 laptop:flex-row bg-offBlack text-offWhite font-archivo fhd:px-40">
+            <div class="flex flex-col items-center justify-between h-auto col-span-6 px-6 text-lg uppercase laptop:text-2xl py-14 laptop:flex-row bg-neutral-950 text-offWhite font-archivo fhd:px-40">
                 <div><a href="mailto:webbygravy.mx@gmail.com"><span class="font-semibold duration-200 text-webbyPink hover:text-webbyGreen">Comunícate con nosotros</span></a>, si hay una idea,<span class="font-bold text-webbyGreen"> hay una solución</span><i class="px-2 py-1 rounded-md shadow-lg laptop:px-3 -rotate-6 shadow-webbyPink bg-offBlack fa fa-lightbulb text-webbyPink" aria-hidden="true"></i></div>
                 <div class="flex flex-row w-full laptop:max-w-fit">
                     <ul class="flex flex-row justify-between w-full px-10 mx-auto mt-10 fhd:px-0 laptop:mt-0 laptop:gap-14">
